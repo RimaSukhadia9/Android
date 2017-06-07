@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lets Spot!</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_a4_plot">A4_plot</string>
+    <string name="title_activity_login_">Login_Activity</string>
+    <string name="title_activity_payment_options">PaymentOptions</string>
+    <string name="title_activity_validate_credit_card">ValidateCreditCard</string>
+    <string name="title_activity_google_login">GoogleLogin</string>
+    <string name="logout">Logout</string>
+    <string name="loginText">Please login with your Google Account</string>
+</resources>

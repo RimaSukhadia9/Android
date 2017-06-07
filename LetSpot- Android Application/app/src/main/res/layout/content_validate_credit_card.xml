@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cs442.xqiu12.letspot.ValidateCreditCard"
+    tools:showIn="@layout/activity_validate_credit_card">
+
+    <EditText
+
+
+        android:id="@+id/AddCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Card Number"
+        android:width="100dp"
+        android:height="50dp"
+        android:drawableLeft="@drawable/cc"
+        android:layout_above="@+id/add_correctCard"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+
+
+        android:id="@+id/ExpiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="MM/YY"
+        android:width="100dp"
+        android:height="50dp"
+
+        android:layout_above="@+id/add_correctCard"
+        android:layout_alignEnd="@+id/add_correctCard"
+        android:layout_marginEnd="74dp" />
+
+    <EditText
+
+        android:id="@+id/EnterCVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CVV"
+        android:width="100dp"
+        android:height="50dp"
+        android:layout_alignTop="@+id/ExpiryDate"
+        android:layout_toStartOf="@+id/ExpiryDate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Credit Card"
+        android:onClick="onClick"
+        android:id="@+id/add_correctCard"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
